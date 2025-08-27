@@ -1,9 +1,14 @@
+
 //전역변수
 const API_BASE_URL = "http://localhost:8080";
+//현재 Update 중인 학생의 ID
+var editingStudentId = null;
 
 //DOM 엘리먼트 가져오기
 const studentForm = document.getElementById("studentForm");
 const studentTableBody = document.getElementById("studentTableBody");
+const submitButton = document.querySelector("button[type='submit']");
+const cancelButton = document.querySelector(".cancel-btn");
 
 //Document Load 이벤트 처리하기
 document.addEventListener("DOMContentLoaded", function () {
