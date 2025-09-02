@@ -81,7 +81,7 @@ function createBook(bookData) {
             return response.json();
         })
         .then((result) => {
-            showSuccess("학생이 성공적으로 등록되었습니다!");
+            showSuccess("도서가 성공적으로 등록되었습니다!");
             resetForm();
             LoadBooks();
         })
@@ -129,7 +129,7 @@ function editBook(bookId) {
                 //status code와 message를 확인하기
                 if (response.status === 404) {
                     //중복 오류 처리
-                    throw new Error(errorData.message || '존재하지 않는 학생입니다.');
+                    throw new Error(errorData.message || '존재하지 않는 도서입니다.');
                 }
             }
             return response.json();
@@ -173,7 +173,7 @@ function updateBook(bookId, bookData) {
                     throw new Error(`${errorData.message} ( 에러코드: ${errorData.statusCode} )` || '중복 되는 정보가 있습니다.');
                 } else {
                     //기타 오류 처리
-                    throw new Error(errorData.message || '학생 수정에 실패했습니다.')
+                    throw new Error(errorData.message || '도서 수정에 실패했습니다.')
                 }
             }
             return response.json();
