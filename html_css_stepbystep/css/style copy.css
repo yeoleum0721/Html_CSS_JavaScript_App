@@ -55,13 +55,13 @@ nav li.active {
 
 /* 'active' 탭 내 링크의 글자색 변경 */
 nav li.active a {
-    color: #fff; /* 사진처럼 글자색을 흰색으로 변경 */
+    color: black;
 }
 
 article {
     background-color: rgba(255, 255, 255, 0.863);
     padding: 25px;
-    position: relative; /* img 요소의 위치 기준을 article로 설정 */
+
 }
 
 h2.title-with-icon {
@@ -82,14 +82,15 @@ h2.title-with-icon {
 img {
     width: 150px;
     position: absolute;
-    right: 50px; /* 사진과 같이 위치를 수정 */
-    bottom: 30px; /* 사진과 같이 위치를 수정 */
+    right: 150px;
+    /* 부모 요소의 오른쪽 끝에 배치 */
+    bottom: 250px;
+    /* 부모 요소의 아래쪽 끝에 배치 */
     transform: rotate(-10deg);
 }
 
 footer {
-    background-color: #777; /* 사진과 같은 배경색으로 변경 */
+    background-color: #555;
     margin: 0;
-    text-align: left; /* 텍스트를 왼쪽으로 정렬 */
-    padding: 10px; /* 상하 여백 추가 */
+
 }
